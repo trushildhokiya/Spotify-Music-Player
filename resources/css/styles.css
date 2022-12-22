@@ -1,0 +1,122 @@
+body{
+    background-image: url("../../assets/images/home-bg.jpeg");;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* styling navigation bar  */
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    height:69px;
+    padding-top: 12px;
+}
+
+nav ul{
+    display: flex;
+    color:white;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width:50px;
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+/* styling bottom player */
+.container{
+    min-height: 75vh;
+    background-color: transparent;
+    color:white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 30px 12px;
+    width: 40%;
+    border-radius: 12px;
+    padding: 34px;
+}
+.bottom{
+    position:sticky;
+    height: 100px;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons{
+    margin: 20px 0 0 0 ;
+}
+.icons i{
+    cursor: pointer;
+    padding: 0 16px;
+}
+
+#progressBar{
+    width:80%;
+    cursor: pointer;
+}
+
+/* styling song list  */
+.songItems{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color:black;
+    margin: 12px 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.songItems img{
+    width: 40px;
+    margin: 0 25px 0;
+    border-radius: 100%;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songItemsContainer{
+    margin: 30px 0 0 0;
+}
+
+.songInfo{
+    position: absolute;
+    display: flex;
+    left: 10vw;
+    align-items: center;
+    margin: 10px 0 0 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    width: 50px;
+    opacity: 0;
+    transition:  opacity 1s ease-out;
+}
